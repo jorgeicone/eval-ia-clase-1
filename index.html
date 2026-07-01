@@ -117,8 +117,8 @@ textarea{resize:vertical;min-height:96px;line-height:1.5}
     <div style="text-align:left;max-width:520px;margin:0 auto">
       <label>¿Cómo te llamas? *</label>
       <input id="in-nombre" placeholder="Tu nombre y apellido" autocomplete="name">
-      <label>Tu emprendimiento o idea de negocio (opcional)</label>
-      <input id="in-emp" placeholder="Nombre de tu negocio o idea">
+      <label>Tu empresa, área o rol (opcional)</label>
+      <input id="in-emp" placeholder="Ej: tu empresa, área o cargo">
       <p class="hint">Usaremos tu nombre solo para el seguimiento del curso. Más adelante podrás decidir si autorizas publicar tu testimonio.</p>
     </div>
     <button class="btn full" id="start">Comenzar evaluación →</button>
@@ -189,16 +189,16 @@ const QS = [
  {cat:"La práctica", type:"star", key:"r_practica",
   q:"Las demos en vivo y los ejercicios prácticos, ¿qué tal?",
   sub:"Hacer las cosas en el momento, no solo verlas."},
- {cat:"Para tu negocio", type:"star", key:"r_aplicabilidad",
-  q:"¿Qué tan aplicable es lo aprendido a TU negocio o idea?",
-  sub:"Si puedes usarlo de verdad en tu emprendimiento."},
+ {cat:"Aplicación práctica", type:"star", key:"r_aplicabilidad",
+  q:"¿Qué tan aplicable es lo aprendido en tu trabajo o estudio?",
+  sub:"Si puedes usarlo de verdad en tu día a día."},
  {cat:"Expectativas", type:"star", key:"r_expectativas",
-  q:"¿El entrenamiento cumplió lo que esperabas?",
+  q:"¿La clase cumplió lo que esperabas?",
   sub:"Comparado con lo que imaginabas antes de empezar."},
 
  // --- BLOQUE B: IMPACTO ---
  {cat:"Tu confianza con la IA", type:"star", key:"r_confianza",
-  q:"Después del curso, ¿qué tan seguro/a te sientes usando IA en tu negocio?",
+  q:"Después de esta clase, ¿qué tan seguro/a te sientes usando IA en tu trabajo?",
   sub:"Tu confianza HOY para ponerte a trabajar con estas herramientas."},
  {cat:"Recomendación", type:"nps", key:"nps",
   q:"¿Qué tan probable es que recomiendes este entrenamiento a otro emprendedor?",
@@ -225,7 +225,7 @@ const QS = [
  {cat:"Autorización", type:"single", key:"autoriza",
   q:"¿Nos autorizas a compartir tu testimonio?",
   sub:"Tú decides. Respetamos tu elección al 100%.",
-  opts:["Sí, con mi nombre y mi emprendimiento","Sí, solo con mi nombre","Sí, pero de forma anónima","No, prefiero que sea privado"]}
+  opts:["Sí, con mi nombre y mi empresa/área","Sí, solo con mi nombre","Sí, pero de forma anónima","No, prefiero que sea privado"]}
 ];
 
 /* ====== ESTADO ====== */
